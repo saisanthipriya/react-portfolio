@@ -4,7 +4,6 @@ import resume from './assets/Sai_Santhi_Priya_Resume.pdf';
 function App() {
 return ( <div className="app">
 
-```
   {/* Navigation */}
   <nav className="navbar">
     <h2 className="logo">Sai Santhi Priya</h2>
@@ -19,116 +18,222 @@ return ( <div className="app">
   </nav>
 
   {/* Hero Section */}
-  <section id="home" className="hero">
-    <div className="hero-content">
-      <p className="intro">Hello, I'm</p>
+<section id="home" className="hero">
+  <div className="hero-content">
 
-      <h1>Sai Santhi Priya</h1>
+    <p className="intro">Hello, I'm</p>
 
-      <h2>Frontend Developer & Full Stack Java Developer</h2>
+    <h1>Sai Santhi Priya</h1>
+
+<h2>
+  <span className="highlight">Frontend Developer</span>
+  &nbsp; &amp; &nbsp;
+  <span className="highlight">Full Stack Java Developer</span>
+</h2>
+
+    <p className="hero-description">
+      I am a Computer Science and Engineering graduate and a Fresher
+      passionate about building responsive, user-friendly and practical
+      web applications using React, Java, Spring Boot and MySQL.
+    </p>
+
+    <div className="hero-buttons">
+
+      <a href="#projects" className="secondary-btn">
+        View Projects
+      </a>
+
+      <a
+        href={resume}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="secondary-btn"
+      >
+        View Resume
+      </a>
+
+      <a
+        href="https://github.com/saisanthipriya/react-portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="secondary-btn"
+      >
+        GitHub
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* About Section */}
+<section id="about" className="section about">
+  <h2>About Me</h2>
+
+  <p>
+    I am a Computer Science and Engineering graduate and a Fresher
+    passionate about frontend development and Full Stack Java.
+    I enjoy building responsive, user-friendly web applications
+    and turning ideas into practical solutions.
+  </p>
+
+  <p>
+    I have hands-on project experience with React, Java, Spring Boot,
+    MySQL, JavaScript, HTML5 and CSS. I am continuously learning,
+    improving my development skills, and looking forward to starting
+    my career as a developer.
+  </p>
+</section>
+
+{/* Skills Section */}
+<section id="skills" className="section">
+  <h2>Technical Skills</h2>
+
+  <div className="skills-container">
+
+    <div className="skill-group">
+      <h3>Frontend</h3>
+      <div className="skill-list">
+        <span>HTML5</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+      </div>
+    </div>
+
+    <div className="skill-group">
+      <h3>Backend</h3>
+      <div className="skill-list">
+        <span>Spring Boot</span>
+      </div>
+    </div>
+
+    <div className="skill-group">
+      <h3>Programming Languages</h3>
+      <div className="skill-list">
+        <span>Java</span>
+        <span>C++</span>
+        <span>Python</span>
+      </div>
+    </div>
+
+    <div className="skill-group">
+      <h3>Database</h3>
+      <div className="skill-list">
+        <span>MySQL</span>
+      </div>
+    </div>
+
+    <div className="skill-group">
+      <h3>Currently Learning</h3>
+      <div className="skill-list">
+        <span>Oracle</span>
+         <span>Spring AI</span>
+          <span>Generative AI</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ {/* Projects Section */}
+<section id="projects" className="section">
+  <h2>Projects</h2>
+
+  <div className="projects-container">
+
+    {/* Project 1 */}
+    <div className="project-card">
+      <h3>Real-Time Fraud Detection Dashboard</h3>
 
       <p>
-        I build responsive and user-friendly web applications using
-        modern frontend technologies and Java-based backend development.
+        A financial transaction monitoring application designed to
+        identify potentially fraudulent transactions and display
+        transaction insights through an interactive dashboard.
       </p>
-      </div>
-<div className="hero-buttons">
-  <a href="#projects" className="primary-btn">
-    View Projects
-  </a>
 
-<a
-  href={resume}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="secondary-btn"
->
-  View Resume
-</a>
+      <p>
+        I worked on the application using Spring Boot, MySQL and
+        JavaScript, with fraud detection logic and dashboard
+        analytics for monitoring transactions.
+      </p>
+
+      <div className="project-tech">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Spring Security</span>
+        <span>MySQL</span>
+        <span>JavaScript</span>
+        <span>Chart.js</span>
+      </div>
+    </div>
+
+    {/* Project 2 */}
+    <div className="project-card">
+      <h3>7Lance Web Development</h3>
+
+      <p>
+        A responsive web development project focused on creating
+        a clean, user-friendly interface and providing a smooth
+        experience across different screen sizes.
+      </p>
+
+      <p>
+        I worked with modern frontend technologies to develop
+        and structure the web application interface.
+      </p>
+
+      <div className="project-tech">
+        <span>HTML5</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+      </div>
+    </div>
+
   </div>
-        </section>
+</section>
 
-  {/* About Section */}
-  <section id="about" className="section">
-    <h2>About Me</h2>
+ {/* Contact Section */}
+<section id="contact" className="section contact">
+  <h2>Let's Connect</h2>
 
-    <p>
-      I am a Computer Science and Engineering graduate with an interest
-      in frontend development and full stack Java development. I enjoy
-      creating clean, responsive and practical web applications while
-      continuously improving my technical skills.
-    </p>
-  </section>
+  <p>
+    I'm open to entry-level opportunities where I can learn,
+    contribute and grow as a developer.
+  </p>
 
-  {/* Skills Section */}
-  <section id="skills" className="section">
-    <h2>Skills</h2>
+  <div className="contact-links">
 
-    <div className="skills-container">
-      <span>Java</span>
-      <span>HTML5</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Spring Boot</span>
-      <span>MySQL</span>
-      <span>Python</span>
-    </div>
-  </section>
+    <a href="mailto:sspbejjavarapu@gmail.com" className="secondary-btn">
+      Email
+    </a>
 
-  {/* Projects Section */}
-  <section id="projects" className="section">
-    <h2>Projects</h2>
+    <a
+      href="https://www.linkedin.com/in/priyabejjavarapu"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="secondary-btn"
+    >
+      LinkedIn
+    </a>
 
-    <div className="projects-container">
+    <a
+      href="https://github.com/saisanthipriya/react-portfolio"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="secondary-btn"
+    >
+      GitHub
+    </a>
 
-      <div className="project-card">
-        <h3>Real-Time Fraud Detection Dashboard</h3>
+  </div>
+</section>
 
-        <p>
-          A financial transaction monitoring system that detects
-          potentially fraudulent transactions and presents analytics
-          through an interactive dashboard.
-        </p>
-
-        <p className="tech">
-          Java • Spring Boot • MySQL • JavaScript • Chart.js
-        </p>
-      </div>
-
-      <div className="project-card">
-        <h3>7Lance Web Development</h3>
-
-        <p>
-          A web development project focused on creating a responsive
-          and user-friendly web application interface.
-        </p>
-
-        <p className="tech">
-          HTML5 • CSS • JavaScript • React
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  {/* Contact Section */}
-  <section id="contact" className="section contact">
-    <h2>Contact Me</h2>
-
-    <p>
-      I'm open to opportunities where I can learn, contribute and grow
-      as a developer.
-    </p>
-
-    <button className="primary-btn">Get In Touch</button>
-  </section>
-
-  {/* Footer */}
-  <footer>
-    <p>© 2026 Sai Santhi Priya. All rights reserved.</p>
-  </footer>
-
+ <footer className="footer">
+  <p>© 2026 Sai Santhi Priya. All rights reserved.</p>
+  <p>Frontend Developer &amp; Full Stack Java Developer</p>
+</footer>
 </div>
 
 );
