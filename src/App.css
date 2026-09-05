@@ -1,6 +1,3 @@
-/* =========================
-   GLOBAL
-========================= */
 
 * {
   margin: 0;
@@ -21,10 +18,6 @@ body {
 .app {
   min-height: 100vh;
 }
-
-/* =========================
-   NAVIGATION
-========================= */
 
 .navbar {
   position: sticky;
@@ -55,16 +48,13 @@ body {
   color: #cbd5e1;
   text-decoration: none;
   font-size: 15px;
+
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #38bdf8;
 }
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
   min-height: 85vh;
@@ -85,21 +75,28 @@ body {
 .intro {
   color: #38bdf8;
   font-size: 1.2rem;
+
   margin-bottom: 10px;
+
   letter-spacing: 2px;
 }
 
 .hero h1 {
   font-size: 4rem;
   line-height: 1.1;
+
   margin: 0 0 15px;
+
   font-weight: 700;
 }
 
 .hero h2 {
   color: #94a3b8;
+
   font-size: 1.7rem;
+
   margin-bottom: 25px;
+
   font-weight: 500;
 }
 
@@ -110,20 +107,23 @@ body {
 
 .hero-description {
   max-width: 700px;
+
   margin: 0 auto 35px;
 
   color: #94a3b8;
+
   line-height: 1.8;
+
   font-size: 1.05rem;
 }
 
-/* =========================
-   BUTTONS
-========================= */
 .hero-buttons {
   display: flex;
+
   justify-content: center;
+
   gap: 15px;
+
   flex-wrap: wrap;
 }
 
@@ -133,12 +133,15 @@ body {
   padding: 12px 24px;
 
   border: 1px solid #38bdf8;
+
   border-radius: 8px;
 
   color: #38bdf8;
+
   background: transparent;
 
   text-decoration: none;
+
   font-weight: 600;
 
   transition:
@@ -149,28 +152,25 @@ body {
 
 .secondary-btn:hover {
   transform: translateY(-3px);
+
   background: #38bdf8;
+
   color: #0f172a;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
 .section {
   width: 100%;
+
   padding: 100px 8%;
 }
 
 .section h2 {
   color: #38bdf8;
+
   font-size: 35px;
+
   margin-bottom: 30px;
 }
-
-/* =========================
-   ABOUT
-========================= */
 
 .about {
   text-align: center;
@@ -182,13 +182,11 @@ body {
   margin: 0 auto 20px;
 
   color: #94a3b8;
+
   line-height: 1.8;
+
   font-size: 1.05rem;
 }
-
-/* =========================
-   SKILLS
-========================= */
 
 .skills-container {
   max-width: 950px;
@@ -196,6 +194,7 @@ body {
   margin: 40px auto 0;
 
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
 
   gap: 25px;
@@ -205,6 +204,7 @@ body {
   padding: 25px;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.03);
@@ -216,17 +216,23 @@ body {
 
 .skill-group:hover {
   transform: translateY(-5px);
+
   border-color: rgba(97, 218, 251, 0.5);
 }
 
 .skill-group h3 {
   margin-bottom: 18px;
+
   font-size: 1.2rem;
+
+  color: #e2e8f0;
 }
 
 .skill-list {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 10px;
 }
 
@@ -237,8 +243,40 @@ body {
 
   background: rgba(97, 218, 251, 0.08);
 
+  border: 1px solid rgba(97, 218, 251, 0.15);
+
   font-size: 0.95rem;
+
+  color: #cbd5e1;
 }
+
+
+#education {
+  text-align: center;
+}
+
+#education > h2 {
+  text-align: center;
+}
+
+#education .projects-container {
+  max-width: 1000px;
+
+  margin: 40px auto 0;
+}
+
+#education .project-card {
+  text-align: left;
+}
+
+#education .project-card h3 {
+  color: #e2e8f0;
+}
+
+#education .project-card p {
+  margin-bottom: 10px;
+}
+
 
 /* =========================
    PROJECTS
@@ -250,6 +288,7 @@ body {
   margin: 40px auto 0;
 
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
 
   gap: 30px;
@@ -259,6 +298,7 @@ body {
   padding: 30px;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 14px;
 
   background: rgba(255, 255, 255, 0.03);
@@ -270,25 +310,31 @@ body {
 
 .project-card:hover {
   transform: translateY(-6px);
+
   border-color: rgba(97, 218, 251, 0.5);
 }
 
 .project-card h3 {
   font-size: 1.35rem;
+
   margin-bottom: 18px;
+
+  color: #e2e8f0;
 }
 
 .project-card p {
   color: #94a3b8;
+
   line-height: 1.7;
+
   margin-bottom: 15px;
 }
 
-/* Project Technology Tags */
-
 .project-tech {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 10px;
 
   margin-top: 20px;
@@ -302,12 +348,37 @@ body {
   font-size: 0.85rem;
 
   background: rgba(97, 218, 251, 0.08);
+
   border: 1px solid rgba(97, 218, 251, 0.2);
+
+  color: #cbd5e1;
 }
 
-/* =========================
-   CONTACT
-========================= */
+#certifications {
+  text-align: center;
+}
+
+#certifications > h2 {
+  text-align: center;
+}
+
+#certifications .projects-container {
+  max-width: 1000px;
+
+  margin: 40px auto 0;
+}
+
+#certifications .project-card {
+  text-align: left;
+}
+
+#certifications .project-card h3 {
+  color: #e2e8f0;
+}
+
+#certifications .project-card p {
+  color: #94a3b8;
+}
 
 .contact {
   text-align: center;
@@ -315,12 +386,15 @@ body {
 
 .contact > p {
   color: #94a3b8;
+
   line-height: 1.8;
 }
 
 .contact-links {
   display: flex;
+
   justify-content: center;
+
   flex-wrap: wrap;
 
   gap: 15px;
@@ -336,12 +410,9 @@ body {
   border-radius: 8px;
 
   text-decoration: none;
+
   font-weight: 600;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
   text-align: center;
@@ -361,33 +432,45 @@ body {
   font-size: 0.9rem;
 }
 
-/* =========================
-   SCROLL OFFSET
-========================= */
-
 section {
   scroll-margin-top: 80px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+#skills > h2,
+#projects > h2,
+#education > h2,
+#certifications > h2 {
+  text-align: center;
+}
 
 @media (max-width: 768px) {
 
   .navbar {
     flex-direction: column;
+
     gap: 15px;
+
+    padding: 18px 5%;
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 12px;
+
     flex-wrap: wrap;
+
     justify-content: center;
   }
 
+  .nav-links a {
+    font-size: 14px;
+  }
+
+
+  /* Hero */
+
   .hero {
     min-height: 80vh;
+
     padding-top: 60px;
   }
 
@@ -397,6 +480,8 @@ section {
 
   .hero h2 {
     font-size: 1.3rem;
+
+    line-height: 1.6;
   }
 
   .hero-description {
@@ -407,16 +492,95 @@ section {
     padding: 70px 8%;
   }
 
+  .section h2 {
+    font-size: 30px;
+  }
+
   .skills-container {
     grid-template-columns: 1fr;
   }
 
+
   .projects-container {
     grid-template-columns: 1fr;
   }
+
+  #education .project-card,
+  #certifications .project-card {
+    padding: 25px;
+  }
 }
-/* Center Skills and Projects headings */
-#skills > h2,
-#projects > h2 {
-  text-align: center;
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 16px 4%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 60px 18px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .secondary-btn {
+    width: 100%;
+
+    max-width: 250px;
+
+    text-align: center;
+  }
+
+  .section {
+    padding: 60px 5%;
+  }
+
+  .section h2 {
+    font-size: 27px;
+  }
+
+  .skill-group {
+    padding: 20px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
 }
+
