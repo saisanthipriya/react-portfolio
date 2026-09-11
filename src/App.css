@@ -205,7 +205,7 @@ a {
 
 .nav-links a {
   position: relative;
-  color: var(--text);
+  color: var(--blue);
   text-decoration: none;
   transition: color 0.3s ease;
 }
